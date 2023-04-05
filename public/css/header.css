@@ -45,9 +45,10 @@ header .navbar .navbar_links {
     display: flex;
     position: absolute;
     right: 2rem;
+    align-items: center;
 }
 
-header .navbar .navbar_links a {
+header .navbar .navbar_links a:not(:last-child) {
     text-decoration: none;
     font-size: 1.5rem;
     flex-wrap: wrap;
@@ -55,19 +56,28 @@ header .navbar .navbar_links a {
     padding: 1.5rem 1rem;
     background-color: #884aa7;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
     transition: all .3s;
 }
 
-header .navbar .navbar_links a:hover {
+header .navbar .navbar_links a:last-child {
+    font-size: 2.5rem;
+    align-items: center;
+}
+
+header .navbar .navbar_links a:hover:not(:last-child) {
     background-color: black;
+}
+
+.links_margin {
+    margin-right: 0.5rem;
 }
 
 footer .footer {
     position: relative;
     z-index: 999;
     background-color: #eee;
-    height: 75px;
+    height: 7.5rem;
     width: 100%;
     left: 0px;
     bottom: 0px;
