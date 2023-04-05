@@ -1,5 +1,4 @@
 @import url("../css/header.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 :root {
     --color: #7b5d52;
@@ -7,6 +6,22 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+header .navbar_main {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .navbar_main a {
+    text-decoration: none;
+    color: #7b5d52;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 main .container .main {
