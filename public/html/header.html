@@ -5,10 +5,9 @@
     <meta name="author" content="Berat Aydın">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>TRLink - Header</title>
+    <link rel="stylesheet" href="../css/utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
 </head>
 <body>
     
@@ -16,13 +15,29 @@
 
             <div class="navbar">
 
-                    <img src="../images/favicon.ico" id="favicon">
-                    <h1>TR.Link</h1>
+                    <img class="logo" src="../images/favicon.ico" id="favicon">
+                    <h1 class="logo">TR.Link</h1>
+
+                    <div class="navbar_main">
+
+                        <ul>
+
+                            <li><a href="index.html">Ana Sayfa</a></li>
+                            <li><a href="pricing.html">Fiyatlandırma</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="sss.html">SSS</a></li>
+
+                        </ul>
+
+                    </div>
 
                 <div class="navbar_links">
 
-                    <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a>
-                    <a href=sign-up.html"><i class="fa-solid fa-user-plus"></i> Kayıt Ol</a>
+                    <a class="links_hover" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a>
+                    <a class="links_hover" href=sign-up.html><i class="fa-solid fa-user-plus"></i> Kayıt Ol</a>
+                    <a><i class="fa fa-align-justify"></i></a>
+                    <a class="brightness"><i class="fa-solid fa-sun"></i></a>
+                    <a class="brightness"><i class="fa-solid fa-moon"></i></a>
 
                 </div>
                 
@@ -30,42 +45,6 @@
 
     </header>
 
-    <main>
-
-        <div class="container">
-
-            <div class="main">
-
-
-
-            </div>
-
-        </div>
-
-    </main>
-
-    <footer>
-
-        <div class="footer">
-
-            <div class="footer_contents">
-
-                <span>© 2023 Tüm hakları saklıdır.</span>
-                
-                <div class="footer_icons">
-
-                    <a href="https://instagram.com/berataydinofficial"><i class="fa-brands fa-instagram hover"></i></a>
-                    <a href="https://twitter.com/berataydin_"><i class="fa-brands fa-twitter hover"></i></a>
-                    <a href="https://github.com/Berat-Aydin"><i class="fa-brands fa-github hover"></i></a>
-                    <a href="https://www.linkedin.com/in/berat-aydın/"><i class="fa-brands fa-linkedin hover"></i></a>
-                    
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
-
 </body>
+<script src="../js/header.js"></script>
 </html>
