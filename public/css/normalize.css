@@ -1,5 +1,5 @@
 @import url(../css/style.css);
-@import url(../css/header.css);
+@import url(../css/utils.css);
 
 @media (max-width: 575px) {
     
@@ -23,12 +23,4 @@
 
 @media (min-width: 1400px) {
     
-}
-
-@media (max-width: 900px) {
-
-    .navbar_main a {
-        display: none;
-    }
-
 }

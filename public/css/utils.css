@@ -11,6 +11,7 @@
 
 html, body {
     font-size: 62.5%;
+    background-color: white;
 }
 
 header {
@@ -52,39 +53,38 @@ header .navbar h1 {
     font-weight: 400;
 }
 
-header .navbar_main {
-    display: flex;
-    column-gap: 2rem;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+header .navbar .navbar_main {
     display: none;
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    left: -20px;
+    z-index: 999;
 }
 
-header .navbar_main ul {
+header .navbar .navbar_main ul {
     display: flex;
-    position: relative;
-    left: 1rem;
+    flex-direction: column;
+    row-gap: 0.5rem;
 }
 
-header .navbar_main ul li {
+header .navbar .navbar_main ul li {
     list-style-type: none;
-    display: flex;
-    position: relative;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: var(--link);
+    transition: all .5s;
 }
 
-header .navbar_main a {
+header .navbar .navbar_main ul li:hover {
+    opacity: 0.8;
+}
+
+header .navbar .navbar_main ul li a {
     text-decoration: none;
-    color: #7b5d52;
-    font-size: 2.5rem;
     font-weight: 400;
-    transition: all .3s;
-}
-
-header .navbar_main a:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
+    color: white;
+    padding: 1rem;
 }
 
 header .navbar .navbar_links {
@@ -95,7 +95,7 @@ header .navbar .navbar_links {
     column-gap: 0.5rem;
 }
 
-header .navbar .navbar_links a:not(:nth-child(4)) {
+header .navbar .navbar_links a:not(:nth-child(n+3):nth-child(-n+5)) {
     text-decoration: none;
     font-size: 1.5rem;
     flex-wrap: wrap;
@@ -105,6 +105,10 @@ header .navbar .navbar_links a:not(:nth-child(4)) {
     border-radius: 1rem;
     margin: 0.5rem;
     transition: all .3s;
+}
+
+header .navbar .navbar_links a:nth-child(4) {
+    display: none;
 }
 
 header .navbar .navbar_links a:nth-child(3) {
@@ -117,12 +121,8 @@ header .navbar .navbar_links a:nth-child(3) {
     color: black;
 }
 
-header .navbar .navbar_links .links_hover:hover {
+header .navbar .navbar_links a.links_hover:hover {
     background-color: black;
-}
-
-header .navbar .navbar_links a:last-child {
-    display: none;
 }
 
 header .navbar .navbar_links .brightness {
@@ -140,8 +140,8 @@ footer #footer {
     height: 13rem;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 footer #footer #footer_icons {
@@ -165,7 +165,7 @@ footer #footer #footer_contents {
 footer #footer #footer_links {
     font-size: 2rem;
     display: flex;
-    column-gap: 2rem;
+    column-gap: 2.5rem;
 }
 
 footer #footer #footer_links a {
