@@ -16,8 +16,8 @@
 
             <div class="navbar">
 
-                    <img class="logo" src="../images/favicon.ico" id="favicon">
-                    <h1 class="logo">TR.Link</h1>
+                    <img class="logo" src="../images/favicon.ico" id="favicon" onclick="window.location.href='index.html'">
+                    <h1 class="logo" onclick="window.location.href='index.html'">TR.Link</h1>
 
                     <div class="navbar_main">
 
@@ -33,8 +33,8 @@
 
                 <div class="navbar_links">
 
-                    <a class="links_hover" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a>
-                    <a class="links_hover" href=sign-up.html><i class="fa-solid fa-user-plus"></i> Kayıt Ol</a>
+                    <a class="links_hover" href="../html/page/login.html"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a>
+                    <a class="links_hover" href="../html/page/sign-up.html"><i class="fa-solid fa-user-plus"></i> Kayıt Ol</a>
                     <a><i class="fa fa-align-justify"></i></a>
                     <a class="brightness"><i class="fa-solid fa-sun"></i></a>
                     <a class="brightness"><i class="fa-solid fa-moon"></i></a>
@@ -68,11 +68,17 @@
 
                         <form action="POST">
 
-                            <td><input type="text" name="link_short" id="main_text" placeholder="https://www.berataydin.com"><input type="submit"  id="main_submit"></td>
+                            <td><input type="url" name="link_short" id="main_text" placeholder="https://www.berataydin.com"><input type="submit"  id="main_submit"></td>
                             
                         </form>
 
                     </table>
+
+                    <div id="main_link">
+
+                        <i class="fa-regular fa-copy fa-5x"></i>
+
+                    </div>
 
                 </div>
 
