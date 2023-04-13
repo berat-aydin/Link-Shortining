@@ -1,12 +1,8 @@
-@import url("../css/utils.css");
-@import url("../css/normalize.css");
+@import url("utils.css");
+@import url("normalize.css");
+@import url("reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-
-html, body {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
 
 :root {
     --link: #884aa7;
@@ -92,13 +88,30 @@ main .main .main_content #main_text {
 main .main .main_content #main_submit {
     width: 100px;
     height: 60px;
-    background-image: linear-gradient(to right, #108D7D, #12a18e);
+    background-image: linear-gradient(45deg, #108D7D, #12a18e);
     border-radius: 10px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     color: white;
-    font-size: 1.75rem;
+    font-size: 1.80rem;
     position: relative;
     left: -5px;
+    cursor: pointer;
+}
+
+main .main .main_content #main_link {
+    display: none;
+    width: 600px;
+    height: 60px;
+    background-color: #272640;
+    position: relative;
+    border-radius: 10px;
+    margin: 1rem 1rem 1rem 0;
+}
+
+main .main .main_content #main_link .fa-copy {
+    float: right;
+    padding: 1.25rem;
+    color: white;
     cursor: pointer;
 }
