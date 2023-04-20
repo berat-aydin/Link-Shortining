@@ -10,23 +10,20 @@
 </head>
 <body>
 
-    <header>
+        <header>
 
             <div class="navbar">
 
-                    <img class="logo" src="../../images/favicon.ico" id="favicon" onclick="goToIndex()">
-                    <h1 class="logo" onclick="goToIndex()">TR.Link</h1>
+                    <img class="logo" src="../../images/favicon.ico" id="favicon" onclick="window.location.href='index.html'">
+                    <h1 class="logo" onclick="window.location.href='index.html'">TR.Link</h1>
 
                     <div class="navbar_main">
 
                         <ul>
 
-                            <li><a href="../index.html">Ana Sayfa</a></li>
-                            <!--<i class="fa-regular fa-house"></i>-->
-                            <li><a href="pricing.html">Fiyatlandırma</a></li>
-                            <!-- <i class="fa-regular fa-circle-dollar"></i> -->
-                            <li><a href="blog.html">Blog</a></li>
-                            <!-- <i class="fa-regular fa-blog"></i> -->
+                            <a href="../index.html"><li><i class="fa-solid fa-house"></i> Ana Sayfa</li></a>
+                            <a href="pricing.html"><li><i class="fa-solid fa-tag"></i> Fiyatlandırma</li></a>
+                            <a href="blog.html"><li><i class="fa-solid fa-blog"></i> Blog</li></a>
 
                         </ul>
 
@@ -34,8 +31,8 @@
 
                 <div class="navbar_links">
 
-                    <a class="links_hover" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a>
-                    <a class="links_hover" href=sign-up.html><i class="fa-solid fa-user-plus"></i> Kayıt Ol</a>
+                    <a class="links_hover" href="../page/login.html"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a>
+                    <a class="links_hover" href="../page/sign-up.html"><i class="fa-solid fa-user-plus"></i> Kayıt Ol</a>
                     <a><i class="fa fa-align-justify"></i></a>
                     <a class="brightness"><i class="fa-solid fa-sun"></i></a>
                     <a class="brightness"><i class="fa-solid fa-moon"></i></a>
@@ -48,7 +45,20 @@
 
     <main>
 
+        <div id="table">
 
+            <table id="login_table">
+
+                <tr><h1>Login</h1></tr>
+
+                <tr><input type="text" placeholder="Kullanıcı Adı veya E-Posta"></tr>
+                <tr><input type="password" placeholder="Şifre"></tr>
+                
+                <tr><input type="submit" value="Giriş Yap"></tr>
+
+            </table>
+
+        </div>
 
     </main>
 
@@ -66,8 +76,8 @@
             </div>
 
             <div id="footer_contents">
-
-                <span>© 2023 TRLink. Tüm hakları saklıdır.</span>
+                
+                <span>© 2023 TR.Link Tüm hakları saklıdır.</span>
 
             </div>
 
@@ -85,6 +95,7 @@
     </footer>
 
 </body>
+<script src="../../js/header.js"></script>
 <script>
     function goToIndex() {
         window.location.href = "../index.html";
