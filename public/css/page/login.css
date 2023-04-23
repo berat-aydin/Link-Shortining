@@ -1,7 +1,5 @@
 @import url("../utils.css");
 
-/*Main Css*/
-
 html, body {
     font-size: 62.5%;
     height: 100%;
@@ -18,7 +16,6 @@ main {
 main #table {
     display: flex;
     flex-direction: column;
-    column-gap: 1.5rem;
     padding: 4rem;
     background-color: transparent;
     border: 1px solid white;
@@ -30,7 +27,7 @@ main #table h1 {
     color: white;
     font-size: 3rem;
     display: flex;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
     justify-content: center;
     margin: 2rem;
     text-transform: capitalize;
@@ -50,46 +47,23 @@ main #table .login_table_buton {
     font-size: 2rem;
 }
 
+main #table input[type="button"] {
+    background-image: linear-gradient(45deg, purple, purple);
+}
+
 main #table span {
     font-size: 1.5rem;
     text-align: right;
-    color: gray;
+    color: white;
     cursor: pointer;
 }
 
 main #table #login_table_text {
     font-size: 2rem;
-    color: white;
     text-align: center;
     cursor: auto;
 }
 
 hr {
     margin: 2.5rem 1rem;
-}
-
-/*Normalize Css*/
-
-@media (max-width: 575px) {
-    
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-
-}
-
-@media (min-width: 1400px) {
-    
 }
