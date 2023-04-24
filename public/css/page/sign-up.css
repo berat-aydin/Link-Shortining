@@ -1,3 +1,98 @@
 @import url("../utils.css");
 
-/*Main Css*/
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+main {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #323153, #323153);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #table {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 4rem;
+}
+
+main #table h1 {
+    font-size: 3rem;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    margin: 2rem;
+}
+
+main #table input {
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+main #table input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: auto;
+}
+
+main #table table tr:nth-child(6) span {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    cursor: context-menu;
+}
+
+main #table table tr:nth-child(6) span a {
+    color: gray;
+}
+
+main #table input[type="submit"] {
+    background-image: linear-gradient(45deg, #108D7D, #12a18e);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+hr {
+    margin: 2.5rem 0rem;
+}
+
+main #table #signup_table_text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+main #table input[type="button"] {
+    background-color: purple;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/*Normalize Css*/
+
+@media (max-width: 575px) {
+    main #table table tr:nth-child(6) span {
+        font-size: 1rem;
+    }
+}

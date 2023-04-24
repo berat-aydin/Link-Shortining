@@ -45,10 +45,12 @@ main #table .login_table_buton {
     cursor: pointer;
     color: white;
     font-size: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 main #table input[type="button"] {
-    background-image: linear-gradient(45deg, purple, purple);
+    background-image: none;
+    background-color: purple;
 }
 
 main #table span {

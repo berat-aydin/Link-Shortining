@@ -14,30 +14,30 @@
 
             <div class="navbar">
 
-                    <img class="logo" src="../../images/favicon.ico" id="favicon" onclick="goToIndex()">
-                    <h1 class="logo" onclick="goToIndex()">TR.Link</h1>
+                    <img class="logo" src="../../images/favicon.ico" id="favicon" onclick="window.location.href='../index.html'">
+                    <h1 class="logo" onclick="window.location.href='../index.html'">TR.Link</h1>
 
                     <div class="navbar_main">
 
                         <ul>
 
-                            <li><a href="../index.html">Ana Sayfa</a></li>
-                            <li><a href="pricing.html">Fiyatlandırma</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <a href="index.html"><li><i class="fa-solid fa-house"></i> Ana Sayfa</li></a>
+                            <a href="../html/page/pricing.html"><li><i class="fa-solid fa-tag"></i> Fiyatlandırma</li></a>
+                            <a href="../html/page/blog.html"><li><i class="fa-solid fa-blog"></i> Blog</li></a>
 
                         </ul>
 
                     </div>
 
-                <div class="navbar_links">
+                    <div class="navbar_links">
 
-                    <a class="links_hover" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a>
-                    <a class="links_hover" href=sign-up.html><i class="fa-solid fa-user-plus"></i> Kayıt Ol</a>
-                    <a><i class="fa fa-align-justify"></i></a>
-                    <a class="brightness"><i class="fa-solid fa-sun"></i></a>
-                    <a class="brightness"><i class="fa-solid fa-moon"></i></a>
-
-                </div>
+                        <a class="links_hover" href="../html/page/login.html"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a>
+                        <a class="links_hover" href="../html/page/sign-up.html"><i class="fa-solid fa-user-plus"></i> Kayıt Ol</a>
+                        <a><i class="fa fa-align-justify"></i></a>
+                        <a class="brightness"><i class="fa-solid fa-sun"></i></a>
+                        <a class="brightness"><i class="fa-solid fa-moon"></i></a>
+    
+                    </div>
                 
             </div>
 
@@ -45,7 +45,71 @@
 
     <main>
 
-        
+        <div id="table">
+
+            <table>
+
+                <th>
+                    <h1>Kayıt Ol</h1>
+                </th>
+                
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Kullanıcı Adı">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="email" placeholder="E-Posta">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Şifre">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Şifre (Tekrar)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span><input type="checkbox" name="kullanici_formu"><a href=""> Kullanıcı Sözleşmesi</a>'ni okudum, kabul ediyorum.</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="login.html"><input type="submit" value="Kayıt Ol"></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span id="signup_table_text">Zaten üye misin?</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="login.html"><input type="button" value="Giriş Yap"></a>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
 
     </main>
 
@@ -82,9 +146,5 @@
     </footer>
 
 </body>
-<script>
-    function goToIndex() {
-        window.location.href = "../index.html";
-    }
-</script>
+<script src="../../js/header.js"></script>
 </html>
