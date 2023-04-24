@@ -35,11 +35,11 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 Bu proje, kullanıcıların uzun URL'leri kısaltmasına ve paylaşmasına izin veren bir link kısaltma hizmeti sunar.
 
-##Kullanım
+## Kullanım
 
 Uygulama açıldığında, kullanıcılar uzun URL'lerini girerek kısaltabilirler. Kısaltılmış URL'leri kopyalayıp paylaşabilirler.
 
-##Kurulum
+## Kurulum
 
 ```markdown
 1. Depoyu klonlayın:
@@ -57,6 +57,6 @@ cd Link-Shortining
 
 veya dosyayı tarayıcınızda açın.
 
-##Lisans
+## Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakın.
