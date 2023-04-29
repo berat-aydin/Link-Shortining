@@ -1,1 +1,40 @@
 @import url("../utils.css");
+
+html, body {
+    font-size: 62.5%;
+}
+
+main {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #323153, #323153);;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+main #section_1 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 5rem;
+}
+
+main #section_1 h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+}
+
+main #section_1 #head > span {
+    display: flex;
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+main #section_1 span > b {
+    color: #5d5d5d;
+    font-style: italic;
+    margin: 0 0.5rem;
+}

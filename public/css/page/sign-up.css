@@ -1,8 +1,9 @@
 @import url("../utils.css");
 
+/*Main Css*/
+
 html, body {
     font-size: 62.5%;
-    height: 100%;
 }
 
 main {
@@ -39,7 +40,7 @@ main #table input {
 }
 
 main #table input[type="checkbox"] {
-    margin: 0;
+    margin-right: 5px;
     padding: 0;
     display: flex;
     width: auto;

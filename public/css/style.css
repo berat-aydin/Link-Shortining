@@ -50,6 +50,7 @@ main .main .main_content {
 main .main .main_content #main_table {
     margin: 1rem;
     font-weight: 600;
+    user-select: none;
 }
 
 main .main .main_content #main_logo {
