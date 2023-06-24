@@ -12,7 +12,7 @@ When the application is opened, users can enter their long URLs to shorten them.
 
 ```markdown
 1. Clone the repository:
-https://github.com/Berat-Aydin/Link-Shortining.git
+https://github.com/Tisbect/Link-Shortining.git
 ```
 
 ```markdown
