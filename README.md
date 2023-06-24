@@ -43,7 +43,7 @@ Uygulama açıldığında, kullanıcılar uzun URL'lerini girerek kısaltabilirl
 
 ```markdown
 1. Depoyu klonlayın:
-https://github.com/Berat-Aydin/Link-Shortining.git
+https://github.com/Tisbect/Link-Shortining.git
 ```
 
 ```markdown
