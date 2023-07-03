@@ -5,7 +5,7 @@ var tableBody = document.getElementById('tabloBody');
     var countryCell = document.createElement('td');
     var countryImage = document.createElement('img');
     countryImage.className = 'flags';
-    countryImage.src = '../../images/flags/tr.svg';
+    countryImage.src = '../../images/tr.svg';
     var countryName = document.createElement('span');
     countryName.textContent = 'Turkey';
     countryCell.appendChild(countryImage);
